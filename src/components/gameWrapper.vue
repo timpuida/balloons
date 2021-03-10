@@ -15,7 +15,7 @@
          top:40px;
          z-index:5;
          padding:0.25rem"
-         @click="togglePauseGame"
+         @click.stop="togglePauseGame"
          >{{ stopGame?"►":"||" }}</button>
        <div style="position: absolute; left: 5px;">
          <p style="font-size:0.75rem">SCORE: {{totalScore}} </p>
@@ -294,5 +294,6 @@ mounted(){
 p{
   pointer-events: none;
   user-select:none;
+  z-index: 6;
 }
 </style>

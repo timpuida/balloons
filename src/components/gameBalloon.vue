@@ -49,6 +49,7 @@
 	bottom: 0;
 	transition: all 0.1s linear;
 	pointer-events:none;
+	z-index: 1;
 }
 .top>div{
 		position:relative;
